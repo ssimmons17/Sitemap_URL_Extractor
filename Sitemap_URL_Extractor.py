@@ -148,37 +148,3 @@ def main_func_two(website):
         print("No sitemap XML was found for this website.")
         pass
     # quit()
-
-
-# main_func('https://weather.com/')
-# main_func('https://regex101.com/')
-# main_func('https://cloudzy.com/')
-# main_func('https://www.udemy.com/')
-# main_func('https://resumegenius.com/')
-# main_func('https://www.allmusic.com/')
-# main_func('https://soundcloud.com/')
-# main_func_two('https://www.allmusic.com/')
-main_func('https://hoplark.com/')
-"""
-app = Flask(__name__, template_folder='/home/stephen/PycharmProjects/Sitemap_Locator/templates')
-
-#default page
-@app.route("/", methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        website = request.form.get("website")
-        main_func(website)
-        return render_template("Sitemap_Extractor_Results_COPY.html", final_links = final_links)
-    return render_template("Sitemap_Extractor.html")
-"""
-
-"""
-@app.route("/results", methods=['GET', 'POST'])
-def results():
-    if request.method == 'POST':
-        website = request.form.get("website")
-        main_func(website)
-
-"""
-
-# app.run(debug=True)
