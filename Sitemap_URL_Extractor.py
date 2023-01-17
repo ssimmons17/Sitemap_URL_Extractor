@@ -2,7 +2,6 @@ import os
 import re
 import requests
 import csv
-from flask import Flask, render_template, request
 
 # regex to extract Sitemap URL
 # sitemap = 'Sitemap: \W*.*'
